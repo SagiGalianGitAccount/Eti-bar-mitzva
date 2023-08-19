@@ -6,7 +6,7 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
   serverApi: ServerApiVersion.v1,
 });
-const collection = client.db("barmitzva").collection("guests");
+const collection = client.db("etiBarMitva").collection("guests");
 
 const addGuest = async (fName, lName, number, phone) => {
   const response = await collection.insertOne({
